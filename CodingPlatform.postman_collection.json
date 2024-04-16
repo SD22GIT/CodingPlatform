@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "785e256b-1916-4d0b-830c-0027d269ac8c",
+		"name": "CodingPlatform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11575406"
+	},
+	"item": [
+		{
+			"name": "getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8098/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserWithId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8098/v1/users/45959"
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"908\" ,\r\n    \"username\":\"ufii\",\r\n    \"score\": -90,\r\n    \"bagde\": \"Coder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8098/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "updateUserScore",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "40",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8098/v1/users/4595900"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUserWithId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8098/v1/users/4595900"
+			},
+			"response": []
+		}
+	]
+}
